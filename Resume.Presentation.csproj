@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Models\Entity\" />
+    <None Remove="Models\Entity\Education\" />
+    <None Remove="Models\Entity\Exprience\" />
+    <None Remove="Models\Entity\MySkills\" />
+    <None Remove="Views\Admin\" />
+    <None Remove="Views\About\" />
+    <None Remove="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Entity\" />
+    <Folder Include="Models\Entity\Education\" />
+    <Folder Include="Models\Entity\Exprience\" />
+    <Folder Include="Models\Entity\MySkills\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\SiteSample\.idea\v-card2.iml" />
+    <None Include="wwwroot\SiteSample\.idea\workspace.xml" />
+    <None Include="wwwroot\SiteSample\.idea\modules.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.12" />
+  </ItemGroup>
+</Project>
