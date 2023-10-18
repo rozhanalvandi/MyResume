@@ -12,6 +12,8 @@ namespace Resume.Presentation.Data
             : base(options)
         {
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)=>
+        options.UseSqlite("Data Source=DataResume.db");
         public DbSet<Education> Educations { get; set; }
         public DbSet<Exprience> Expriences { get; set; }
         public DbSet<MySkills> MySkills { get; set; }

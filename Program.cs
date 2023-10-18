@@ -9,6 +9,7 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Services.AddDbContext<ResumeDbContext>();
         builder.Services.AddDbContext<ResumeDbContext>(op =>
                op.UseSqlite(builder.Configuration.GetConnectionString("AppDbContext")));
 
