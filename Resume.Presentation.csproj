@@ -10,18 +10,12 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <None Remove="Models\Entity\" />
-    <None Remove="Models\Entity\Education\" />
-    <None Remove="Models\Entity\Exprience\" />
-    <None Remove="Models\Entity\MySkills\" />
     <None Remove="Views\Admin\" />
     <None Remove="Views\About\" />
     <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Entity\" />
-    <Folder Include="Models\Entity\Education\" />
-    <Folder Include="Models\Entity\Exprience\" />
-    <Folder Include="Models\Entity\MySkills\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\About\" />
     <Folder Include="wwwroot\" />
@@ -46,5 +40,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resume.Domain\Resume.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -563,6 +563,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Resume.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        }
       }
     }
   },
@@ -1293,6 +1303,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Resume.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Resume.Domain/Resume.Domain.csproj",
+      "msbuildProject": "../Resume.Domain/Resume.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1300,7 +1315,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.12",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
+      "Resume.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1328,7 +1344,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
+              "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

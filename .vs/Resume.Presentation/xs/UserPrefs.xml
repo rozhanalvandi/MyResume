@@ -1,47 +1,26 @@
 ﻿<Properties StartupConfiguration="{EA663480-894D-4335-8694-408E8F78ACA0}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/EducationController.cs" relfile="Controllers/EducationController.cs" line="10" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Resume.Application.Resume.Application FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/EducationController.cs">
     <Files>
-      <File FileName="appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="11" Column="47" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="appsettings.json" />
       <File FileName="Program.cs" />
       <File FileName="Migrations/20231011224002_initial.cs" />
       <File FileName="Controllers/AboutController.cs" />
       <File FileName="Controllers/AdminController.cs" />
-      <File FileName="Controllers/HomeController.cs" Line="17" Column="6" />
+      <File FileName="Controllers/HomeController.cs" />
       <File FileName="Models/Entity/Education/Education.cs" />
       <File FileName="Models/Entity/Exprience/Exprience.cs" />
       <File FileName="Models/Entity/MySkills/MySkills.cs" />
-      <File FileName="Controllers/EducationController.cs" Line="38" Column="32" />
-      <File FileName="Data/ResumeDbContext.cs" Line="16" Column="53" />
+      <File FileName="Controllers/EducationController.cs" Line="5" Column="32" />
+      <File FileName="Data/ResumeDbContext.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Resume.Presentation">
-            <Node name="Resume.Presentation" selected="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Entity" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/EducationController.cs" relfile="Controllers/EducationController.cs" line="12" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Resume.Presentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

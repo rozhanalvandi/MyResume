@@ -134,3 +134,5 @@
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/obj/Debug/net7.0/Resume.Presentation.pdb
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/obj/Debug/net7.0/Resume.Presentation.genruntimeconfig.cache
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/obj/Debug/net7.0/ref/Resume.Presentation.dll
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Domain.dll
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Domain.pdb

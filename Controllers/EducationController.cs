@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Resume.Presentation.Data;
 using Resume.Presentation.Models.Entitis.Education;
 
@@ -12,32 +13,21 @@ namespace Resume.Presentation.Controllers
 {
     public class EducationController : Controller
     {
-        private readonly ResumeDbContext _context;
-
-        public EducationController(ResumeDbContext context)
-        {
-            _context = context;
-        }
+        
         [HttpGet]
-        public IActionResult ListOfEducations()
+        public async Task<IActionResult> ListOfEducations()
         {
-            List<Education> educations = _context.Educations.ToList();
-            Education education = educations.First();
             return View();
         }
-        public IActionResult CreateAnEducation()
+        public async Task<IActionResult> CreateAnEducation()
         {
-            
-            Education EducationDataBase = new Education()
-            {
-                EducationTitle="MATH",
-                EducationDuration="2023",
-                Description="TEST"
+            return RedirectToAction(nameof(ListOfEducations));
+        }
+        public async Task<IActionResult> DeleteAnEducation(int id)
+        {
 
-            };
-            _context.Educations.Add(EducationDataBase);
-           _context.SaveChanges();
-            return View();
+            
+            return RedirectToAction(nameof(ListOfEducations));
         }
     }
 }
