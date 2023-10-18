@@ -564,6 +564,20 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "Resume.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Resume.Domain": "1.0.0",
+          "Resume.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Application.dll": {}
+        }
+      },
       "Resume.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -572,6 +586,21 @@
         },
         "runtime": {
           "bin/placeholder/Resume.Domain.dll": {}
+        }
+      },
+      "Resume.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.12",
+          "Resume.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
         }
       }
     }
@@ -1304,10 +1333,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Resume.Application/1.0.0": {
+      "type": "project",
+      "path": "../Resume.Application/Resume.Application.csproj",
+      "msbuildProject": "../Resume.Application/Resume.Application.csproj"
+    },
     "Resume.Domain/1.0.0": {
       "type": "project",
       "path": "../Resume.Domain/Resume.Domain.csproj",
       "msbuildProject": "../Resume.Domain/Resume.Domain.csproj"
+    },
+    "Resume.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Resume.Infrastructure/Resume.Infrastructure.csproj",
+      "msbuildProject": "../Resume.Infrastructure/Resume.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1316,7 +1355,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
-      "Resume.Domain >= 1.0.0"
+      "Resume.Application >= 1.0.0",
+      "Resume.Domain >= 1.0.0",
+      "Resume.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1345,8 +1386,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj": {
+              "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj"
+            },
             "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
               "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj"
+            },
+            "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj": {
+              "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj"
             }
           }
         }

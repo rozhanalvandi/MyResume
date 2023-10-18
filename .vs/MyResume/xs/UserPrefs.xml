@@ -1,13 +1,6 @@
 ﻿<Properties StartupConfiguration="{EA663480-894D-4335-8694-408E8F78ACA0}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/EducationController.cs" relfile="Controllers/EducationController.cs" line="10" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Resume.Application.Resume.Application FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Resome.Domain.Resume.Domain FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../Resume.Application/Services/Implementation/EducationService.cs">
     <Files>
       <File FileName="appsettings.Development.json" Line="1" Column="1" />
@@ -31,6 +24,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Resume.Infrastructure.Resume.Infrastructure FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/EducationController.cs" relfile="Controllers/EducationController.cs" line="10" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Resume.Application.Resume.Application FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

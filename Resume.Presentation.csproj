@@ -12,14 +12,12 @@
     <None Remove="Models\Entity\" />
     <None Remove="Views\Admin\" />
     <None Remove="Views\About\" />
-    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Entity\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\About\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
@@ -43,6 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Resume.Domain\Resume.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Resume.Infrastructure\Resume.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Resume.Application\Resume.Application.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

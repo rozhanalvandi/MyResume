@@ -12,7 +12,9 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.12",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.12",
-          "Resume.Domain": "1.0.0"
+          "Resume.Application": "1.0.0",
+          "Resume.Domain": "1.0.0",
+          "Resume.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Resume.Presentation.dll": {}
@@ -343,9 +345,28 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+      "Resume.Application/1.0.0": {
+        "dependencies": {
+          "Resume.Domain": "1.0.0",
+          "Resume.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Resume.Application.dll": {}
+        }
+      },
       "Resume.Domain/1.0.0": {
         "runtime": {
           "Resume.Domain.dll": {}
+        }
+      },
+      "Resume.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.12",
+          "Resume.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Resume.Infrastructure.dll": {}
         }
       }
     }
@@ -559,7 +580,17 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
+    "Resume.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Resume.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resume.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

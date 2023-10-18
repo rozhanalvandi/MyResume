@@ -136,3 +136,7 @@
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/obj/Debug/net7.0/ref/Resume.Presentation.dll
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Domain.dll
 /Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Domain.pdb
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Infrastructure.dll
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Infrastructure.pdb
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Application.dll
+/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/bin/Debug/net7.0/Resume.Application.pdb

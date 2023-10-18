@@ -4,6 +4,66 @@
     "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Resume.Presentation.csproj": {}
   },
   "projects": {
+    "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj",
+        "projectName": "Resume.Application",
+        "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj",
+        "packagesPath": "/Users/rozhanalvandi/.nuget/packages/",
+        "outputPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rozhanalvandi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
+                "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj"
+              },
+              "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj": {
+                "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -57,6 +117,73 @@
         }
       }
     },
+    "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj",
+        "projectName": "Resume.Infrastructure",
+        "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj",
+        "packagesPath": "/Users/rozhanalvandi/.nuget/packages/",
+        "outputPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rozhanalvandi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
+                "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Resume.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -80,8 +207,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj": {
+                "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Application/Resume.Application.csproj"
+              },
               "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj": {
                 "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Domain/Resume.Domain.csproj"
+              },
+              "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj": {
+                "projectPath": "/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Infrastructure/Resume.Infrastructure.csproj"
               }
             }
           }
