@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Resume.Application.Services;
-using Resume.Presentation.Models.Entitis.Education;
+using Resume.Domain.Entitis.Education;
+
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,15 +16,16 @@ namespace Resume.Presentation.Controllers
     {
         private readonly EducationService _educationService;
 
-        public EducationController()
+        public EducationController(EducationService educationService)
         {
-
+            _educationService = educationService;
         }
 
         [HttpGet]
         public async Task<IActionResult> ListOfEducations()
         {
-            return View();
+            List<Education> educations = await _educationService.GetListOfEducationsAsync();
+            return View(educations);
         }
         public async Task<IActionResult> CreateAnEducation()
         {

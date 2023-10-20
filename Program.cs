@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Resume.Presentation.Data;
+﻿
 using System;
+using Microsoft.EntityFrameworkCore;
+using Resume.Domain.RepositoryInterface;
+using Resume.Infrastructure.Dbcontext;
+using Resume.Infrastructure.Repository;
 
 namespace Resume.Presentation;
 
@@ -10,6 +13,10 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddDbContext<ResumeDbContext>();
+        builder.Services.AddScoped<IEducationRepository, EducationRepository>();
+        builder.Services.AddScoped<IExprienceRepository, ExprienceRepository>();
+        builder.Services.AddScoped<IMySkillsRepository, MySkillsRepository>();
+
         builder.Services.AddDbContext<ResumeDbContext>(op =>
                op.UseSqlite(builder.Configuration.GetConnectionString("AppDbContext")));
 

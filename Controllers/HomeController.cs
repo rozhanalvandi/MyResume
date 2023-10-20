@@ -1,32 +1,48 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Resume.Application.DTOs.SiteSide.HomeIndex;
+using Resume.Domain.RepositoryInterface;
+using Resume.Infrastructure.Dbcontext;
 using Resume.Presentation.Models;
 
 namespace Resume.Presentation.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IEducationRepository _educationRepository;
+    private readonly IExprienceRepository _exprienceRepository;
+    private readonly IMySkillsRepository _mySkillsRepository;
+    public HomeController(IEducationRepository educationRepository,
+                          IExprienceRepository exprienceRepository,
+                          IMySkillsRepository mySkillsRepository)
     {
-        _logger = logger;
+        _educationRepository = educationRepository;
+        _exprienceRepository = exprienceRepository;
+        _mySkillsRepository = mySkillsRepository;
+
+    }
+    public async Task<IActionResult> Index()
+    {
+
+        var myskillsAsync = await _mySkillsRepository.GetListOfMySkills();
+
+        
+        var EducationAsync = await _educationRepository.GetListOfEduction();
+
+        var ExprinceAsync = await _exprienceRepository.GetListOfExprience();
+       
+       
+        HomeIndexModelDTOs homeIndexModelDTOs = new HomeIndexModelDTOs()
+        {
+            Educations = EducationAsync,
+            Expriences= ExprinceAsync,
+            MySkills= myskillsAsync,
+
+        };
+        return View(homeIndexModelDTOs);
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }
 
