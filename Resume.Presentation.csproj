@@ -12,12 +12,14 @@
     <None Remove="Models\Entity\" />
     <None Remove="Views\Admin\" />
     <None Remove="Views\About\" />
+    <None Remove="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Entity\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\About\" />
     <Folder Include="wwwroot\" />
+    <Folder Include="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
