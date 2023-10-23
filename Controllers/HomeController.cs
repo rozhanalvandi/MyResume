@@ -27,8 +27,7 @@ public class HomeController : Controller
     {
 
         var myskillsAsync = await _mySkillsRepository.GetListOfMySkills();
-
-        
+            
         var EducationAsync = await _educationRepository.GetListOfEduction();
 
         var ExprinceAsync = await _exprienceRepository.GetListOfExprience();

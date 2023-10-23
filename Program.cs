@@ -16,6 +16,7 @@ public class Program
         builder.Services.AddScoped<IEducationRepository, EducationRepository>();
         builder.Services.AddScoped<IExprienceRepository, ExprienceRepository>();
         builder.Services.AddScoped<IMySkillsRepository, MySkillsRepository>();
+        builder.Services.AddScoped<IContactRepository, ContactRepository>();
 
         builder.Services.AddDbContext<ResumeDbContext>(op =>
                op.UseSqlite(builder.Configuration.GetConnectionString("AppDbContext")));
