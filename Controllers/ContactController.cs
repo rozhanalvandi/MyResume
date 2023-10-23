@@ -24,21 +24,11 @@ namespace Resume.Presentation.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Index(string Fullname, string EmailContact, string MessageContact)
+        public async Task<IActionResult> Index(Contact contact)
         {
-            Contact model = new Contact()
-            {
-
-                FullName = Fullname,
-                Email = EmailContact,
-                Message = MessageContact,
-                Time = DateTime.Now,
-                IsSeen = false,
-
-
-            };
-            await _contactRepository.AddContactToDataBase(model); 
-
+            contact.Time = DateTime.Now;
+            contact.IsSeen = false;
+            await _contactRepository.AddContactToDataBase(contact); 
 
             return View();
         } 

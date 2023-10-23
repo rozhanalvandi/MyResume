@@ -1,67 +1,69 @@
 ﻿<Properties StartupConfiguration="{EA663480-894D-4335-8694-408E8F78ACA0}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/ContactController.cs" relfile="Controllers/ContactController.cs" line="28" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataResume.db">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Resume.Domain/Entities/Contact/ContactLocation.cs">
     <Files>
       <File FileName="Views/Home/Index.cshtml" Line="61" Column="14" />
-      <File FileName="Program.cs" />
-      <File FileName="Controllers/ContactController.cs" />
-      <File FileName="Views/Contact/Index.cshtml" />
-      <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Views/_ViewStart.cshtml" />
-      <File FileName="../Resume.Domain/Entities/Contact/Contact.cs" />
-      <File FileName="../Resume.Infrastructure/Dbcontext/ResumeDbContext.cs" Line="28" Column="2" />
-      <File FileName="../Resume.Infrastructure/Repository/ContactRepository.cs" />
-      <File FileName="Controllers/HomeController.cs" Line="16" Column="5" />
+      <File FileName="Program.cs" Line="19" Column="63" />
+      <File FileName="Controllers/ContactController.cs" Line="44" Column="1" />
+      <File FileName="Views/Contact/Index.cshtml" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/Dbcontext/ResumeDbContext.cs" Line="12" Column="33" />
+      <File FileName="../Resume.Infrastructure/Repository/ContactRepository.cs" Line="18" Column="53" />
+      <File FileName="Controllers/HomeController.cs" />
       <File FileName="../Resume.Domain/RepositoryInterface/IContactRepository.cs" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="11" Column="39" />
       <File FileName="../Resume.Infrastructure/Repository/EducationRepository.cs" />
-      <File FileName="../Resume.Application/Services/Implementation/EducationService.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Application/Services/Interfaces/IEducationService.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Application/Services/Implementation/EducationService.cs" />
+      <File FileName="../Resume.Application/Services/Interfaces/IEducationService.cs" />
       <File FileName="Controllers/AboutController.cs" />
       <File FileName="Controllers/AdminController.cs" />
-      <File FileName="../Resume.Domain/RepositoryInterface/IMySkillsRepository.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Domain/RepositoryInterface/IMySkillsRepository.cs" />
       <File FileName="../Resume.Domain/Entities/MySkills/MySkills.cs" />
-      <File FileName="../Resume.Infrastructure/Repository/MySkillsRepository.cs" Line="24" Column="1" />
-      <File FileName="../Resume.Infrastructure/DataBase.db-wal" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023043250_init.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/Repository/MySkillsRepository.cs" />
+      <File FileName="../Resume.Infrastructure/Migrations/20231023043250_init.cs" />
       <File FileName="../Resume.Infrastructure/Migrations/20231023043250_init.Designer.cs" Line="1" Column="1" />
+      <File FileName="Views/Admin/Index.cshtml" Line="1" Column="1" />
+      <File FileName="../Resume.Application/DTOs/SiteSide/Home-Index/HomeIndexModelDTOs.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Domain/Entities/Contact/ContactLocation.cs" Line="11" Column="1" />
+      <File FileName="../Resume.Infrastructure/Migrations/20231023060819_init__locationtable.cs" Line="1" Column="1" />
       <File FileName="../Resume.Infrastructure/Migrations/ResumeDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="DataResume.db" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/Migrations/20231023060819_init__locationtable.Designer.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/Migrations/20231023045533_initial.Designer.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/Migrations/20231023045533_initial.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Infrastructure/daata.db-wal" Line="1" Column="1" />
+      <File FileName="../Resume.Domain/Entities/Contact/Contact.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyResume">
             <Node name="Resome.Domain" expanded="True">
-              <Node name="Resume.Domain" expanded="True">
+              <Node name="Resume.Domain">
                 <Node name="Entities" expanded="True">
-                  <Node name="Contact" expanded="True" />
-                </Node>
-                <Node name="RepositoryInterface" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Resume.Application" expanded="True">
-              <Node name="Resume.Application" expanded="True">
-                <Node name="Services" expanded="True">
-                  <Node name="Implementation" expanded="True" />
-                  <Node name="Interfaces" expanded="True" />
+                  <Node name="Contact" expanded="True">
+                    <Node name="ContactLocation.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
             <Node name="Resume.Infrastructure" expanded="True">
-              <Node name="Resume.Infrastructure">
+              <Node name="Resume.Infrastructure" expanded="True">
                 <Node name="Dbcontext" expanded="True" />
-                <Node name="Repository" expanded="True" />
+                <Node name="Migrations" expanded="True" />
               </Node>
             </Node>
             <Node name="Resume.Presentation">
-              <Node name="Resume.Presentation">
+              <Node name="Resume.Presentation" expanded="True">
                 <Node name="Controllers" expanded="True" />
-                <Node name="Views" expanded="True" />
-                <Node name="DataResume.db" selected="True" />
+                <Node name="Views" expanded="True">
+                  <Node name="Admin" expanded="True" />
+                  <Node name="Contact" expanded="True" />
+                  <Node name="Home" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
