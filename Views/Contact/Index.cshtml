@@ -1,4 +1,4 @@
-﻿@model Resume.Domain.Entities.Contact.Contact
+﻿@model Resume.Application.DTOs.SiteSide.Contact.ContactDTOs
 <div class="content" data-simplebar="init">
     <div class="simplebar-wrapper" style="margin: 0px -30px;">
         <div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask">
@@ -28,10 +28,10 @@
                                     <textarea class="textarea form-control" id="messageContact" asp-for="Message" placeholder="Your Message" rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')" style="overflow: hidden; overflow-wrap: break-word; height: 116px;"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                @*<div class="form-group col-12 col-md-12">
-                                    <textarea class="textarea form-control" id="messageContact" name="Address " placeholder="Your Address" rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')" style="overflow: hidden; overflow-wrap: break-word; height: 116px;"></textarea>
+                                <div class="form-group col-12 col-md-12">
+                                    <textarea class="textarea form-control" id="messageContact" asp-for="Address "  placeholder="Your Address" rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')" style="overflow: hidden; overflow-wrap: break-word; height: 116px;"></textarea>
                                     <div class="help-block with-errors"></div>
-                                </div>*@
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">

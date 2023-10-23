@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Resume.Application.DTOs.SiteSide.Contact;
 using Resume.Domain.Entities.Contact;
 using Resume.Domain.RepositoryInterface;
 using Resume.Infrastructure.Dbcontext;
@@ -24,12 +25,21 @@ namespace Resume.Presentation.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Index(Contact contact)
+        public async Task<IActionResult> Index(ContactDTOs contactDTOs)
         {
-            contact.Time = DateTime.Now;
-            contact.IsSeen = false;
-            await _contactRepository.AddContactToDataBase(contact); 
+            Contact contact = new Contact()
+            {
+                FullName = contactDTOs.FullName,
+                Email = contactDTOs.Email,
+                Message = contactDTOs.Message
+            };
+            ContactLocation contactLocation = new ContactLocation()
+            {
 
+                Address = contactDTOs.Address
+            };
+            await _contactRepository.AddContactToDataBase(contact);
+            await _contactRepository.AddLocationToDataBase(contactLocation);
             return View();
         } 
     }

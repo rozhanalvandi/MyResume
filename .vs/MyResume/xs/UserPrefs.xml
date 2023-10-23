@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{EA663480-894D-4335-8694-408E8F78ACA0}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Controllers/ContactController.cs" relfile="Controllers/ContactController.cs" line="28" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Resume.Domain/Entities/Contact/ContactLocation.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ContactController.cs">
     <Files>
       <File FileName="Views/Home/Index.cshtml" Line="61" Column="14" />
-      <File FileName="Program.cs" Line="19" Column="63" />
-      <File FileName="Controllers/ContactController.cs" Line="44" Column="1" />
-      <File FileName="Views/Contact/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Controllers/ContactController.cs" Line="42" Column="77" />
+      <File FileName="Views/Contact/Index.cshtml" Line="32" Column="114" />
       <File FileName="../Resume.Infrastructure/Dbcontext/ResumeDbContext.cs" Line="12" Column="33" />
-      <File FileName="../Resume.Infrastructure/Repository/ContactRepository.cs" Line="18" Column="53" />
+      <File FileName="../Resume.Infrastructure/Repository/ContactRepository.cs" Line="25" Column="47" />
       <File FileName="Controllers/HomeController.cs" />
-      <File FileName="../Resume.Domain/RepositoryInterface/IContactRepository.cs" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="11" Column="39" />
-      <File FileName="../Resume.Infrastructure/Repository/EducationRepository.cs" />
+      <File FileName="../Resume.Domain/RepositoryInterface/IContactRepository.cs" Line="9" Column="63" />
+      <File FileName="appsettings.json" />
+      <File FileName="../Resume.Infrastructure/Repository/EducationRepository.cs" Line="1" Column="1" />
       <File FileName="../Resume.Application/Services/Implementation/EducationService.cs" />
       <File FileName="../Resume.Application/Services/Interfaces/IEducationService.cs" />
       <File FileName="Controllers/AboutController.cs" />
@@ -24,18 +25,12 @@
       <File FileName="../Resume.Domain/RepositoryInterface/IMySkillsRepository.cs" />
       <File FileName="../Resume.Domain/Entities/MySkills/MySkills.cs" />
       <File FileName="../Resume.Infrastructure/Repository/MySkillsRepository.cs" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023043250_init.cs" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023043250_init.Designer.cs" Line="1" Column="1" />
       <File FileName="Views/Admin/Index.cshtml" Line="1" Column="1" />
-      <File FileName="../Resume.Application/DTOs/SiteSide/Home-Index/HomeIndexModelDTOs.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Domain/Entities/Contact/ContactLocation.cs" Line="11" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023060819_init__locationtable.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/ResumeDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023060819_init__locationtable.Designer.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023045533_initial.Designer.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/Migrations/20231023045533_initial.cs" Line="1" Column="1" />
-      <File FileName="../Resume.Infrastructure/daata.db-wal" Line="1" Column="1" />
-      <File FileName="../Resume.Domain/Entities/Contact/Contact.cs" Line="1" Column="1" />
+      <File FileName="../Resume.Application/DTOs/SiteSide/Home-Index/HomeIndexModelDTOs.cs" Line="6" Column="36" />
+      <File FileName="../Resume.Domain/Entities/Contact/ContactLocation.cs" Line="8" Column="3" />
+      <File FileName="../Resume.Infrastructure/Migrations/ResumeDbContextModelSnapshot.cs" />
+      <File FileName="../Resume.Domain/Entities/Contact/Contact.cs" Line="9" Column="38" />
+      <File FileName="../Resume.Application/DTOs/SiteSide/Contact/ContactDTOs.cs" Line="2" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -44,21 +39,31 @@
             <Node name="Resome.Domain" expanded="True">
               <Node name="Resume.Domain">
                 <Node name="Entities" expanded="True">
-                  <Node name="Contact" expanded="True">
-                    <Node name="ContactLocation.cs" selected="True" />
+                  <Node name="Contact" expanded="True" />
+                </Node>
+                <Node name="RepositoryInterface" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Resume.Application" expanded="True">
+              <Node name="Resume.Application">
+                <Node name="DTOs">
+                  <Node name="SiteSide">
+                    <Node name="Home-Index" expanded="True" />
                   </Node>
                 </Node>
               </Node>
             </Node>
             <Node name="Resume.Infrastructure" expanded="True">
-              <Node name="Resume.Infrastructure" expanded="True">
-                <Node name="Dbcontext" expanded="True" />
+              <Node name="Resume.Infrastructure">
                 <Node name="Migrations" expanded="True" />
+                <Node name="Repository" expanded="True" />
               </Node>
             </Node>
             <Node name="Resume.Presentation">
-              <Node name="Resume.Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+              <Node name="Resume.Presentation">
+                <Node name="Controllers" expanded="True">
+                  <Node name="ContactController.cs" selected="True" />
+                </Node>
                 <Node name="Views" expanded="True">
                   <Node name="Admin" expanded="True" />
                   <Node name="Contact" expanded="True" />
@@ -71,7 +76,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
 </Properties>
