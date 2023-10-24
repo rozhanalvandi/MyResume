@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Resume.Application.DTOs.SiteSide.Contact;
+using Resume.Application.Services.Interfaces;
 using Resume.Domain.Entities.Contact;
 using Resume.Domain.RepositoryInterface;
 using Resume.Infrastructure.Dbcontext;
+using Resume.Infrastructure.Repository;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,32 +16,24 @@ namespace Resume.Presentation.Controllers
 {
     public class ContactController : Controller
     {
-        private readonly IContactRepository _contactRepository;
-        public ContactController(IContactRepository contactRepository)
+        private readonly IContactService _contactService;
+        public ContactController (IContactService contactService)
         {
-            _contactRepository = contactRepository; 
+            _contactService = contactService;
         }
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
-        [HttpPost]
+        [HttpPost , ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(ContactDTOs contactDTOs)
         {
-            Contact contact = new Contact()
+            if (ModelState.IsValid)
             {
-                FullName = contactDTOs.FullName,
-                Email = contactDTOs.Email,
-                Message = contactDTOs.Message
-            };
-            ContactLocation contactLocation = new ContactLocation()
-            {
-
-                Address = contactDTOs.Address
-            };
-            await _contactRepository.AddContactToDataBase(contact);
-            await _contactRepository.AddLocationToDataBase(contactLocation);
+                await _contactService.AddNewContact(contactDTOs);
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         } 
     }

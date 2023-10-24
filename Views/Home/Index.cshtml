@@ -1,4 +1,4 @@
-﻿@model Resume.Application.DTOs.SiteSide.HomeIndex.HomeIndexModelDTOs
+﻿@model Resume.Application.DTOs.SiteSide.Home_Index.HomeIndexModelDTO
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -6,60 +6,83 @@
 
 <!-- Content -->
 <div class="content" data-simplebar>
+
     <div class="section mt-0">
-        <h1 class="title title--h1 title__separate" style="color: #000000">Resume</h1>
+        <h1 class="title title--h1 title__separate">Resume</h1>
     </div>
 
-    <!-- Education -->
+    <!-- Experience -->
     <div class="section">
         <h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-education.svg" alt="" /> Education</h2>
         <div class="timeline">
-            <!-- Item -->
-            @foreach (var item in Model.Educations)
+
+            @foreach (var education in Model.Educations)
             {
+                <!-- Item -->
                 <article class="timeline__item">
-                    <h5 class="title title--h3 timeline__title" style="color: #4535ac">@item.EducationTitle </h5>
-                    <span class="timeline__period" style="color: #5072a7">@item.EducationDuration</span>
-                    <p class="timeline__description" style="color: #035096">@item.Description</p>
+                    <h5 class="title title--h3 timeline__title">
+                        @education.EducationTitle
+                    </h5>
+                    <span class="timeline__period">
+                        @education.EducationDuration
+                    </span>
+                    <p class="timeline__description">
+                        @education.Description
+                    </p>
                 </article>
-
             }
-
-
 
         </div>
     </div>
-    <!-- Experience -->
+
+
     <div class="section">
         <h2 class="title title--h2"><img class="title-icon" src="/SiteSample/assets/icons/icon-experience.svg" alt="" /> Experience</h2>
         <div class="timeline">
-            @foreach (var item in Model.Expriences)
+
+            @foreach (var experience in Model.Experience)
             {
+                <!-- Item -->
                 <article class="timeline__item">
-                    <h5 class="title title--h3 timeline__title" style="color: #4535ac">@item.ExprienceTitle</h5>
-                    <span class="timeline__period" style="color: #5072a7">@item.ExprienceDuration</span>
-                    <p class="timeline__description" style="color: #035096">@item.Description</p>
+                    <h5 class="title title--h3 timeline__title">
+                        @experience.ExprienceTitle
+                    </h5>
+                    <span class="timeline__period">
+                        @experience.ExprienceDuration
+                    </span>
+                    <p class="timeline__description">
+                        @experience.Description
+                    </p>
                 </article>
             }
 
         </div>
     </div>
+
     <!-- Skills -->
     <div class="section">
-        <h2 class="title title--h2" style="color: #4535ac">My Skills</h2>
-        <div class="box-gray" style="background-color:white">
-            <!-- Progress -->
-            @foreach (var item in Model.MySkills)
-            {
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="@item.Perentage" aria-valuemin="0" aria-valuemax="100" style="background-color: #9370db ">
-                        <div class="progress-text"><span> @item.SkillTitle</span><span>@item.Perentage</span></div>
-                    </div>
-                    <div class="progress-text"><span> @item.SkillTitle</span></div>
-                </div>
+        <h2 class="title title--h2">My Skills</h2>
+        <div class="box-gray">
 
-            }
+            @foreach (var mySkill in Model.MySkills)
+             {
+                <!-- Progress -->
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="@mySkill.Perentage" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-text">
+                            <span>
+                                @mySkill.SkillTitle
+                            </span>
+                            <span>
+                                @mySkill.Perentage%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="progress-text"><span>@mySkill.SkillTitle</span></div>
+                </div>
+             }
 
         </div>
     </div>
+
 </div><!-- Content End -->

@@ -9,17 +9,27 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <None Remove="Models\Entity\" />
     <None Remove="Views\Admin\" />
     <None Remove="Views\About\" />
     <None Remove="Views\Contact\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\AdminPanel\" />
+    <None Remove="Areas\AdminPanel\Controllers\" />
+    <None Remove="Views\Shared\" />
+    <None Remove="Areas\AdminPanel\Views\" />
+    <None Remove="Areas\AdminPanel\Views\Home\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Entity\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\About\" />
     <Folder Include="wwwroot\" />
     <Folder Include="Views\Contact\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\AdminPanel\" />
+    <Folder Include="Areas\AdminPanel\Controllers\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Areas\AdminPanel\Views\" />
+    <Folder Include="Areas\AdminPanel\Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
