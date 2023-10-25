@@ -18,6 +18,8 @@
     <None Remove="Views\Shared\" />
     <None Remove="Areas\AdminPanel\Views\" />
     <None Remove="Areas\AdminPanel\Views\Home\" />
+    <None Remove="Areas\AdminPanel\Views\Education\" />
+    <None Remove="Areas\AdminPanel\Views\MySkills\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Admin\" />
@@ -30,9 +32,21 @@
     <Folder Include="Views\Shared\" />
     <Folder Include="Areas\AdminPanel\Views\" />
     <Folder Include="Areas\AdminPanel\Views\Home\" />
+    <Folder Include="Areas\AdminPanel\Views\Education\" />
+    <Folder Include="Areas\AdminPanel\Views\MySkills\" />
+    <Folder Include="wwwroot\AdminSample\" />
+    <Folder Include="wwwroot\AdminSample\build\" />
+    <Folder Include="wwwroot\AdminSample\dist\" />
+    <Folder Include="wwwroot\AdminSample\pages\" />
+    <Folder Include="wwwroot\AdminSample\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\AdminSample\" />
+    <Content Remove="wwwroot\AdminSample\build\" />
+    <Content Remove="wwwroot\AdminSample\dist\" />
+    <Content Remove="wwwroot\AdminSample\pages\" />
+    <Content Remove="wwwroot\AdminSample\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\SiteSample\.idea\v-card2.iml" />

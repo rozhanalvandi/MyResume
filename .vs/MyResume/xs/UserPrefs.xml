@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{EA663480-894D-4335-8694-408E8F78ACA0}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Resume.Presentation.Resume.Presentation PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/AdminPanel/Views/Shared/_AdminLayout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/AdminPanel/Views/Home/Index.cshtml">
     <Files>
       <File FileName="Controllers/ContactController.cs" />
       <File FileName="../Resume.Infrastructure/Repository/ContactRepository.cs" />
@@ -22,15 +21,10 @@
       <File FileName="../Resume.Application/Services/Implementation/EducationService.cs" />
       <File FileName="../Resume.Domain/RepositoryInterface/IMySkillsRepository.cs" />
       <File FileName="Views/_ViewImports.cshtml" />
-      <File FileName="Areas/AdminPanel/Controllers/HomeController.cs" />
-      <File FileName="Areas/AdminPanel/Views/_ViewStart.cshtml" />
-      <File FileName="../Resume.Application/Services/Implementation/DashbordService.cs" />
-      <File FileName="../Resume.Application/Services/Interfaces/IDashbordService.cs" />
-      <File FileName="../Resume.Domain/Entities/Education/Education.cs" />
       <File FileName="../Resume.Domain/Entities/Exprience/Exprience.cs" />
       <File FileName="../Resume.Domain/Entities/MySkills/MySkills.cs" />
       <File FileName="../Resume.Application/DTOs/SiteSide/Contact/ContactDTOs.cs" />
-      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" Line="21" Column="8" />
       <File FileName="../Resume.Domain/DTOs/UserDTO.cs" />
       <File FileName="../Resume.Domain/Entities/Contact/Contact.cs" />
       <File FileName="../Resume.Application/Services/Interfaces/IContactService.cs" />
@@ -40,31 +34,53 @@
       <File FileName="../Resume.Application/Services/Interfaces/IExprienceService.cs" />
       <File FileName="../Resume.Infrastructure/Repository/ExprienceRepository.cs" />
       <File FileName="../Resume.Infrastructure/Repository/MySkillsRepository.cs" />
-      <File FileName="Areas/AdminPanel/Views/Shared/_AdminLayout.cshtml" Line="149" Column="35" />
+      <File FileName="Areas/AdminPanel/Views/Shared/_AdminLayout.cshtml" />
       <File FileName="Areas/AdminPanel/Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="Areas/AdminPanel/Views/_ViewImports.cshtml" />
       <File FileName="Views/_ViewStart.cshtml" />
-      <File FileName="Areas/AdminPanel/Views/Home/Index.cshtml" />
+      <File FileName="Areas/AdminPanel/Views/Home/Index.cshtml" Line="40" Column="45" />
+      <File FileName="Areas/AdminPanel/Controllers/EducationController.cs" />
+      <File FileName="../Resume.Application/DTOs/AdminSide/Education/ListOfAnEducationAdminSideDTO.cs" />
+      <File FileName="../Resume.Domain/Entities/Education/Education.cs" />
+      <File FileName="../Resume.Application/Services/Implementation/DashbordService.cs" />
+      <File FileName="../Resume.Application/Services/Interfaces/IMyskillsService.cs" />
+      <File FileName="../Resume.Application/DTOs/SiteSide/Home_Index/HomeIndexModelDTO.cs" />
+      <File FileName="Areas/AdminPanel/Views/Education/ListOfAnEducation.cshtml" />
+      <File FileName="wwwroot/css/site.css" />
+      <File FileName="Areas/AdminPanel/Controllers/MySkillsController.cs" />
+      <File FileName="Areas/AdminPanel/Views/MySkills/ListOfMySkills.cshtml" />
+      <File FileName="Areas/AdminPanel/Views/MySkills/CreateMySkills.cshtml" />
+      <File FileName="Areas/AdminPanel/Controllers/HomeController.cs" />
+      <File FileName="Areas/AdminPanel/Views/MySkills/EditMySkills.cshtml" />
+      <File FileName="Areas/AdminPanel/Views/MySkills/DeleteMySkills.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyResume">
+            <Node name="Resume.Application" expanded="True" />
+            <Node name="Resume.Domain" expanded="True" />
+            <Node name="Resume.Infrastructure" expanded="True" />
             <Node name="Resume.Presentation">
               <Node name="Resume.Presentation">
                 <Node name="Areas" expanded="True">
                   <Node name="AdminPanel" expanded="True">
                     <Node name="Views" expanded="True">
-                      <Node name="Shared" expanded="True">
-                        <Node name="_AdminLayout.cshtml" selected="True" />
+                      <Node name="Home" expanded="True">
+                        <Node name="Index.cshtml" selected="True" />
                       </Node>
+                      <Node name="MySkills" expanded="True" />
+                      <Node name="Shared" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
-                  <Node name="Admin" expanded="True" />
-                  <Node name="Shared" expanded="True" />
+                  <Node name="Home" expanded="True" />
+                </Node>
+                <Node name="wwwroot" expanded="True">
+                  <Node name="AdminSample" expanded="True" />
+                  <Node name="SiteSample" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -73,4 +89,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>
