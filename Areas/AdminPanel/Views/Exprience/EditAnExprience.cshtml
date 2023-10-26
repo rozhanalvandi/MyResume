@@ -1,0 +1,69 @@
+﻿@model Resume.Domain.Entities.Exprience.Exprience
+
+<div class="content-wrapper" style="min-height: 265.6px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">ویرایش سابقه تجربه</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-left">
+                        <li class="breadcrumb-item"><a href="/AdminPanel">داشبورد ادمین</a></li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">ویرایش اطلاعات تجربه  </h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form asp-action="EditAnExprience" asp-area="AdminPanel" asp-controller="Exprience" method="post">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Id</label>
+                                    <input type="text" readonly class="form-control" id="exampleInputEmail1" asp-for="Id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">عنوان تجربه </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" asp-for="ExprienceTitle" placeholder="عنوان تجربه را وارد کنید">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">بازه ی زمانی تجربه </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" asp-for="ExprienceDuration" placeholder="بازه ی زمانی تجربه را وارد کنید">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">توضیحات</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" asp-for="Description" placeholder="توضیحات را وارد کنید">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">شرکت</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" asp-for="Company" placeholder="شرکت را وارد کنید">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">سایت شرکت</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" asp-for="CompanySite" placeholder="سایت شرکت را وارد کنید">
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">ارسال</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+</div>

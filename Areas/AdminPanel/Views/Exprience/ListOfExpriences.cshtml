@@ -1,0 +1,86 @@
+﻿@model List<Resume.Domain.Entities.Exprience.Exprience>
+
+<div class="content-wrapper" style="min-height: 265.6px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">لیست تجربه ها</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-left">
+                        <li class="breadcrumb-item"><a href="/AdminPanel">داشبورد ادمین</a></li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>`
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">جدول تجربه ها</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>نام تجربه </th>
+                                        <th>بازه ی زمانی </th>
+                                        <th>توضیحات</th>
+                                        <th>شرکت</th>
+                                        <th>سایت شرکت</th>
+                                    </tr>
+
+                                    @foreach (var exprience in Model)
+                                    {
+                                        <tr>
+                                            <td>@exprience.Id</td>
+                                            <td>@exprience.ExprienceTitle</td>
+                                            <td>
+                                                @exprience.ExprienceDuration.
+                                            </td>
+                                            <td>
+                                                @exprience.Description
+                                            </td>
+                                            <td>
+                                                @exprience.Company
+                                            </td>
+                                            <td>
+                                                @exprience.CompanySite
+                                            </td>
+                                            <td>
+                                                <a class="badge badge-primary" style="cursor:pointer;"
+                                                   asp-action="EditAnExprience"
+                                                   asp-area="AdminPanel"
+                                                   asp-controller="Exprience"
+                                                   asp-route-exprienceId="@exprience.Id">
+                                                    ویرایش
+                                                </a>
+
+                                                <a class="badge badge-danger" style="cursor:pointer;"
+                                                   asp-action="DeleteAnExprience"
+                                                   asp-area="AdminPanel"
+                                                   asp-controller="Exprience"
+                                                   asp-route-exprienceId="@exprience.Id">حذف</a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+</div>

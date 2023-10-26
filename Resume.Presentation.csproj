@@ -20,6 +20,7 @@
     <None Remove="Areas\AdminPanel\Views\Home\" />
     <None Remove="Areas\AdminPanel\Views\Education\" />
     <None Remove="Areas\AdminPanel\Views\MySkills\" />
+    <None Remove="Areas\AdminPanel\Views\Exprience\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Admin\" />
@@ -39,6 +40,7 @@
     <Folder Include="wwwroot\AdminSample\dist\" />
     <Folder Include="wwwroot\AdminSample\pages\" />
     <Folder Include="wwwroot\AdminSample\plugins\" />
+    <Folder Include="Areas\AdminPanel\Views\Exprience\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

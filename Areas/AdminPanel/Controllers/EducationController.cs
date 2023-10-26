@@ -44,7 +44,7 @@ namespace Resume.Presentation.Areas.AdminPanel.Controllers
         [HttpPost]
         public async Task<IActionResult> EditAnEducation(Education education)
         {
-            await _educationService.AddAnEducationToDatabase(education);
+            await _educationService.EditAnEducation(education);
             return RedirectToAction(nameof(ListOfAnEducation));
 
         }

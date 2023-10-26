@@ -32,6 +32,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9FZHVjYXRpb24vTGlzdE9mQW5FZHVjYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Areas/AdminPanel/Views/Exprience/CreateAnExprience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9FeHByaWVuY2UvQ3JlYXRlQW5FeHByaWVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Areas/AdminPanel/Views/Exprience/DeleteAnExprience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9FeHByaWVuY2UvRGVsZXRlQW5FeHByaWVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Areas/AdminPanel/Views/Exprience/EditAnExprience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9FeHByaWVuY2UvRWRpdEFuRXhwcmllbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Areas/AdminPanel/Views/Exprience/ListOfExpriences.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9FeHByaWVuY2UvTGlzdE9mRXhwcmllbmNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rozhanalvandi/Projects/Resume.Presentation 1.57.13 AM/Resume.Presentation/Areas/AdminPanel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW5QYW5lbC9WaWV3cy9Ib21lL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
